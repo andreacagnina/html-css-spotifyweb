@@ -51,6 +51,10 @@ main {
     overflow-y: auto;
 }
 
+.container {
+    margin: 30px 0;
+}
+
 .main-container {
     padding: 10px;
 }
@@ -135,10 +139,17 @@ li img {
     border: 1px solid white;
 }
 
-.card {
-    background-color: red;
-    border: 1px solid white;
 
+.album img {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.col-100 {
+    width: 100%;
 }
 
 .col {
@@ -173,6 +184,14 @@ hr {
     border-radius: 50%;
     object-fit: fill;
     background-color: #282828;
+}
+
+.music-list li {
+    padding: 0 15px;
+}
+
+.m-10-0 {
+    margin: 10px 0;
 }
 
 
