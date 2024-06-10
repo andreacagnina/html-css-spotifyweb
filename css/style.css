@@ -14,11 +14,30 @@ footer {
     background-color: #282828;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 main {
     height: calc(100vh - 100px);
     display: flex;
+}
+
+/* -------------------------CONTAINER---------------------------- */
+
+.sidebar-container.lg {
+    width: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar-container {
+    background-color: black;
+}
+
+
+.full-container {
+    width: 100vw;
+    background-color: #141922;
     overflow-y: auto;
 }
 
@@ -27,47 +46,9 @@ main {
     padding: 30px 10px;
     background-color: #080b1285;
     text-align: right;
-
 }
 
-.sidebar-container.lg {
-    width: 250px;
-    height: calc(100vh - 100px);
-    background-color: black;
-    overflow-y: auto;
-    padding: 10px;
-}
-
-.sidebar-container.small {
-    height: calc(100vh - 100px);
-    background-color: black;
-    padding: 10px;
-}
-
-.full-container {
-    width: 100vw;
-    height: calc(100vh - 100px);
-    background-color: #141922;
-    overflow-y: auto;
-}
-
-.container {
-    margin: 30px 0;
-}
-
-.main-container {
-    padding: 10px;
-}
-
-.left-container,
-.center-container,
-.right-container {
-    border: 1px solid white;
-}
-
-/* .playlist {
-        overflow-y: auto;
-        } */
+/* -------------------UTILITY UL & LI----------------  */
 
 ul {
     list-style-type: none;
@@ -78,13 +59,22 @@ ul li,
     padding: 10px 0;
 }
 
-.music-list ul li {
+ul li {
     display: inline-block;
+}
+
+.music-list li {
+    padding: 0 15px;
 }
 
 .nav-icons ul li {
     display: flex;
     align-items: center;
+}
+
+li img {
+    width: 40px;
+    height: 40px;
 }
 
 .row {
@@ -96,24 +86,13 @@ ul li,
     align-items: center;
 }
 
-li img {
-    width: 40px;
-    height: 40px;
-}
 
+/* ------------------------FLEX------------------------- */
 
-
-.row-sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
 
 .flex {
     display: flex;
 }
-
 
 .j-center {
     justify-content: center;
@@ -123,29 +102,15 @@ li img {
     justify-content: space-between;
 }
 
+.row-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .align-center {
     align-items: center;
-}
-
-.content {
-    margin: 10px;
-}
-
-.header-container button {
-    background-color: #0e1219;
-    color: white;
-    padding: 10px 35px;
-    border-radius: 25px;
-    border: 1px solid white;
-}
-
-
-.album img {
-    width: 100%;
-}
-
-.card h3 {
-    margin: 10px 0;
 }
 
 .col-100 {
@@ -156,27 +121,8 @@ li img {
     width: calc(100%/6);
 }
 
-.text-center {
-    text-align: center;
-}
 
-.hidden {
-    display: none;
-}
-
-.p-10 {
-    padding-left: 10px;
-}
-
-.resize {
-    width: 15px;
-    height: 15px;
-}
-
-hr {
-    width: 90%;
-    margin: 10px auto;
-}
+/* -----------IMG STYLE-------------- */
 
 .avatar.round {
     width: 40px;
@@ -193,14 +139,75 @@ hr {
     width: 150px;
 }
 
-.music-list li {
-    padding: 0 15px;
+.resize-15 {
+    width: 15px;
+    height: 15px;
+}
+
+.resize-50 {
+    width: 50px;
+    height: 50px;
+}
+
+.album img {
+    width: 100%;
+}
+
+
+/* ------------------MARGIN & PADDING-------------------  */
+
+.m-30-0 {
+    margin: 30px 0;
 }
 
 .m-10 {
     margin: 10px;
 }
 
+.p-10 {
+    padding-left: 10px;
+}
+
+.content {
+    margin: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+/* -----------------UTILITY VARIE--------------------- */
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+hr {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.header-container button {
+    background-color: #0e1219;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.left-container,
+.center-container,
+.right-container {
+    border: 1px solid white;
+}
+
+.column {
+    flex-direction: column;
+}
 
 @media screen and (max-width: 768px) {
     .col {
@@ -229,7 +236,7 @@ hr {
         display: none;
     }
 
-    .sidebar-container.small {
+    .sidebar-container {
         padding: 0px;
 
     }
