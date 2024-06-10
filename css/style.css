@@ -8,3 +8,57 @@ body {
     font-family: "Open Sans", sans-serif;
     color: white;
 }
+
+footer {
+    height: 100px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    height: calc(100vh - 100px);
+    display: flex;
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    background-color: #080b1285;
+    text-align: right;
+}
+
+.sidebar-container {
+    width: 250px;
+    background-color: black;
+}
+
+.main-container {
+    width: 100vw;
+    background-color: #141922;
+}
+
+.left-container,
+.center-container,
+.right-container {
+    border: 1px solid white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    margin: 10px;
+    background-color: red;
+    border: 1px solid white;
+}
+
+.col {
+    width: calc(100%/6);
+}
