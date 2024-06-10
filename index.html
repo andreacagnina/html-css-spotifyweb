@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Spotify</title>
 </head>
 
@@ -23,19 +24,32 @@
                 <div class="col-">
                     <div class="content">
                         <div class="logo">
-                            <img src="" alt="">
-                            <h2>Spotify</h2>
+                            <img src="./img/logo.svg" alt="">
                         </div>
                         <div class="nav-icons">
                             <ul>
-                                <li>Home</li>
-                                <li>Cerca</li>
-                                <li>La tua libreria</li>
+                                <li>
+                                    <img src="./img/home.svg" alt="Home">
+                                    <div>Home</div>
+                                </li>
+                                <li>
+                                    <img src="./img/search.svg" alt="Search">
+                                    <div>Cerca</div>
+                                </li>
+                                <li>
+                                    <img src="/img/libreria.svg" alt="Library">
+                                    <div>La tua libreria</div>
+                                </li>
                             </ul>
                         </div>
-                        <div class="playlist">
+                        <div class=" playlist">
                             <h4>PLAYLIST</h4>
-                            <div class="new-list"></div>
+                            <div class="new-list flex items-center p-10">
+                                <div>
+                                    <i class="fa-solid fa-square-plus fa-2xl" style="color: #a3a3a3;"></i>
+                                </div>
+                                <div class="p-10">Crea Playlist</div>
+                            </div>
                             <ul>
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
@@ -48,35 +62,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-">
-                    <div class="content">
-                        <div>Installa app</div>
-                        <hr>
-                        <h4>John Doe</h4>
+                <div class=" col-">
+                    <div class="content flex items-center">
+                        <img class="resize" src="./img/download.svg" alt="download">
+                        <div class="p-10">Installa app</div>
+                    </div>
+                    <hr>
+                    <div class="content flex items-center">
+                        <img class="resize avatar" src="./img/profile.svg" alt="profile">
+                        <h4 class="p-10">John Doe</h4>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="sidebar-container small hidden column j-btw">
-            <div class="col-">
-                <div class="content top-sidebar text-center">
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                    </ul>
+        <div class="sidebar-container small hidden">
+            <div class="row-sidebar">
+                <div class="col-">
+                    <div class="content top-sidebar text-center">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-">
+                    <div class=" content bottom-sidebar text-center">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-">
-                <div class=" content bottom-sidebar text-center">
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         </div>
         <div class="full-container">
             <div class="header-container">
@@ -208,7 +227,7 @@
     </main>
 
     <footer>
-        <div class="left-container">
+        <!-- <div class="left-container">
             <div class="row">
                 <div class="col">
                     <div class="content">
@@ -226,7 +245,7 @@
                 </div>
             </div>
         </div>
-        <div class="center-container">2
+        <div class="center-container">
             <div class="row">
                 <div class="col">
                     <div class="content">
@@ -240,11 +259,10 @@
                 </div>
             </div>
         </div>
-        <div class="right-container">3
+        <div class="right-container">
             <div class="row">
                 <div class="col">
                     <div class="content">
-
                         <div>icona menu</div>
                         <div>icona pc</div>
                         <div>icona altoparlante</div>
@@ -256,7 +274,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </footer>
 
 </body>
