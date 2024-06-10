@@ -24,8 +24,10 @@ main {
 
 .header-container {
     width: 100%;
+    padding: 30px 10px;
     background-color: #080b1285;
     text-align: right;
+
 }
 
 .sidebar-container.lg {
@@ -104,10 +106,6 @@ li img {
     height: 100%;
 }
 
-.column {
-    flex-direction: column;
-}
-
 .flex {
     display: flex;
 }
@@ -127,6 +125,14 @@ li img {
 
 .content {
     margin: 5px;
+}
+
+.header-container button {
+    background-color: #0e1219;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 25px;
+    border: 1px solid white;
 }
 
 .card {
