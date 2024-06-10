@@ -32,6 +32,7 @@ main {
     width: 250px;
     /* height: 100vh; */
     background-color: black;
+    height: 100%;
 }
 
 .sidebar-container.small {
@@ -112,9 +113,11 @@ ul {
     display: none;
 }
 
-.block {
+/* .sidebar-container.lg {
     display: block;
-}
+} */
+
+
 
 @media screen and (max-width: 768px) {
     .col {
@@ -139,7 +142,7 @@ ul {
         display: block;
     }
 
-    .block {
+    .sidebar-container.lg {
         display: none;
     }
 
