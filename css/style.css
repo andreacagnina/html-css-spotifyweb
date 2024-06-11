@@ -26,9 +26,10 @@ main {
 
 .sidebar-container.lg {
     width: 250px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     overflow-x: hidden;
 }
+
 
 .sidebar-container {
     background-color: black;
@@ -107,6 +108,7 @@ li img {
     justify-content: space-between;
 }
 
+
 .row-sidebar {
     display: flex;
     flex-direction: column;
@@ -125,6 +127,19 @@ li img {
 .col {
     width: calc(100%/6);
 }
+
+.col-min-width-200 {
+    min-width: 200px;
+}
+
+
+/* .col-max-width-500 {
+    max-width: 500px;
+}
+
+.col-min-width-100 {
+    max-width: 100px;
+} */
 
 
 /* -----------IMG STYLE-------------- */
@@ -204,36 +219,19 @@ hr {
     border: 1px solid white;
 }
 
-
-/* .center-container {
-    width: 900px;
-    max-width: 900px;
-}
-
-.min-width {
-    min-width: 234px;
-}
- */
-
-
-/* .slider {
-    width: 600px;
-    border-radius: 50%;
-}
-
-.slider-min {
-    width: 100px;
-}
-
-
-.range {
-    width: 100%;
+.track-bar {
+    width: 500px;
     height: 5px;
-    background: #d3d3d3;
+    background-color: #fff;
+    border-radius: 10px;
+}
 
-} */
-
-
+.vol-bar {
+    width: 100px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
 
 
 @media screen and (max-width: 768px) {
