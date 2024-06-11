@@ -357,10 +357,7 @@ hr {
     width: 200px;
 }
 
-.volbar-controls i,
-.two-icons i {
-    font-size: small;
-}
+
 
 
 
@@ -410,12 +407,26 @@ hr {
     .col {
         width: calc(100%/4);
     }
+
+    .volbar-controls i,
+    .two-icons i {
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
     .albumbar-controls .two-icons {
         flex-direction: column;
+    }
+
+    .two-icons {
+        text-align: right;
+    }
+
+    .albumbar-controls .album-photo {
+        width: 30px;
+        height: 30px;
     }
 
 }
