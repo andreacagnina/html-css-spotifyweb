@@ -152,6 +152,8 @@ li img {
 
 .col {
     width: calc(100%/6);
+    min-width: 173px;
+    min-height: 173px;
 }
 
 .col-min-width-200 {
@@ -190,6 +192,27 @@ li img {
     width: 100%;
 }
 
+.album {
+    position: relative;
+}
+
+.play {
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.circle {
+    border-radius: 50%;
+}
 
 /* ------------------MARGIN & PADDING-------------------  */
 
@@ -310,7 +333,8 @@ hr {
     font-size: xx-small;
 }
 
-.albumbar-controls .two-icons {
+.albumbar-controls .two-icons,
+.volbar-controls .two-icons {
     width: 20%;
 }
 
@@ -349,9 +373,6 @@ hr {
     width: 60%;
 }
 
-.volbar-controls>div {
-    width: 10%;
-}
 
 .playbar-controls-btn {
     width: 200px;
@@ -402,6 +423,12 @@ hr {
     cursor: pointer;
 }
 
+.album:hover .play {
+    display: flex;
+}
+
+
+
 
 @media screen and (max-width: 836px) {
     .col {
@@ -412,17 +439,15 @@ hr {
     .two-icons i {
         font-size: small;
     }
-}
 
-@media screen and (max-width: 768px) {
-
-    .albumbar-controls .two-icons {
+    .albumbar-controls .two-icons,
+    .volbar-controls .two-icons {
         flex-direction: column;
     }
 
-    .two-icons {
-        text-align: right;
-    }
+}
+
+@media screen and (max-width: 768px) {
 
     .albumbar-controls .album-photo {
         width: 30px;
@@ -444,12 +469,6 @@ hr {
     .playbar-controls .current,
     .playbar-controls .end {
         font-size: x-small;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .col {
-        width: calc(100%/2);
     }
 
     .hidden {
@@ -478,6 +497,11 @@ hr {
 
     .two-icons div {
         margin: 0;
+    }
+
+    .play {
+        font-size: 5rem;
+
     }
 
 }
