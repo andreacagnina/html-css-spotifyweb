@@ -224,6 +224,7 @@ hr {
     height: 5px;
     background-color: #fff;
     border-radius: 10px;
+    resize: both;
 }
 
 .vol-bar {
@@ -231,7 +232,9 @@ hr {
     height: 5px;
     background-color: #fff;
     border-radius: 10px;
+    resize: both;
 }
+
 
 
 @media screen and (max-width: 768px) {
