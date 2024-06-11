@@ -292,10 +292,20 @@ hr {
 
 .playbar-controls .playbar {
     width: 80%;
-    background-color: white;
-    height: 5px;
+    background-color: rgb(160, 55, 55);
+    height: 10px;
     border: 1px solid black;
 }
+
+.playbar .playbar-white {
+    width: 10%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    border-radius: 30px;
+}
+
+
+
 
 /* .left-container .content,
 .right-container .content {
@@ -357,11 +367,12 @@ hr {
     font-size: 40px;
 }
 
-.track-bar:hover,
-.vol-bar:hover {
+.playbar .playbar-white:hover {
     background-color: green;
     cursor: pointer;
 }
+
+
 
 
 
