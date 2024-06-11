@@ -6,7 +6,8 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    color: white;
+    /* color: white; */
+    color: #7f7e88;
 }
 
 footer {
@@ -15,7 +16,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #7f7e88;
 }
 
 main {
@@ -210,6 +210,12 @@ li img {
 
 /* -----------------UTILITY VARIE--------------------- */
 
+h2,
+h3,
+h4 {
+    color: #fff;
+}
+
 .text-center {
     text-align: center;
 }
@@ -247,9 +253,9 @@ hr {
     resize: both;
 }
 
-.f-c-white {
+/* .f-c-white {
     color: #fff;
-}
+} */
 
 /* -------------HOVER---------------------- */
 
@@ -286,6 +292,11 @@ hr {
     font-size: 40px;
 }
 
+.track-bar:hover,
+.vol-bar:hover {
+    background-color: green;
+    cursor: pointer;
+}
 
 
 
