@@ -15,6 +15,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #7f7e88;
 }
 
 main {
@@ -28,6 +29,8 @@ main {
     width: 250px;
     /* overflow-y: auto; */
     overflow-x: hidden;
+    color: #7f7e88;
+    font-weight: 700;
 }
 
 
@@ -63,6 +66,11 @@ ul li,
 .display-i-b li,
 .music-list li {
     display: inline-block;
+}
+
+.music-list {
+    color: #7f7e88;
+    font-weight: 700;
 }
 
 .music-list li {
@@ -122,6 +130,10 @@ li img {
 
 .col-100 {
     width: 100%;
+}
+
+.col-50 {
+    width: 50%;
 }
 
 .col {
@@ -234,6 +246,46 @@ hr {
     border-radius: 10px;
     resize: both;
 }
+
+.f-c-white {
+    color: #fff;
+}
+
+/* -------------HOVER---------------------- */
+
+.header-container button:hover {
+    font-size: larger;
+    cursor: pointer;
+}
+
+.music-list ul li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar-container ul li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.new-list:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.hover:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.hover.under:hover {
+    text-decoration: underline;
+}
+
+.hover.fa-2xl:hover {
+    font-size: 40px;
+}
+
 
 
 
