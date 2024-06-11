@@ -91,9 +91,7 @@ li img {
     flex-wrap: wrap;
 }
 
-.items-center {
-    align-items: center;
-}
+
 
 
 /* ------------------------FLEX------------------------- */
@@ -115,6 +113,13 @@ li img {
     justify-content: space-between;
 }
 
+.j-around {
+    justify-content: space-around;
+}
+
+.j-evenly {
+    justify-content: space-evenly;
+}
 
 .row-sidebar {
     width: 250px;
@@ -125,6 +130,14 @@ li img {
 }
 
 .align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.items-center {
     align-items: center;
 }
 
@@ -263,38 +276,57 @@ hr {
 /* -------------------------FOOTER------------------ */
 .left-container,
 .right-container {
-    width: 15%;
+    width: 20%;
     height: 100%;
-    background-color: yellow;
 }
 
 .center-container {
-    width: 70%;
+    width: 60%;
     height: 100%;
-    background-color: red;
 }
 
 .playbar-controls {
     width: 100%;
 }
 
-.playbar-controls-btn {
-    width: 30%;
-    background-color: aqua;
+.volbar-controls {
+    width: 100%;
 }
+
+.albumbar-controls {
+    width: 100%;
+}
+
+.albumbar-controls .album-photo {
+    width: 20%;
+}
+
+.albumbar-controls .album-photo img {
+    width: 100%;
+}
+
+.albumbar-controls .album-current {
+    width: 30%;
+}
+
+.albumbar-controls .album-current {
+    font-size: xx-small;
+}
+
+.albumbar-controls .two-icons {
+    width: 20%;
+}
+
 
 .playbar-controls .current,
 .playbar-controls .end {
     width: 10%;
-    background-color: white;
-    border: 1px solid black;
 }
 
 .playbar-controls .playbar {
-    width: 80%;
-    background-color: rgb(160, 55, 55);
-    height: 10px;
-    border: 1px solid black;
+    width: 70%;
+    background-color: #5c5c5c;
+    height: 5px;
 }
 
 .playbar .playbar-white {
@@ -303,6 +335,35 @@ hr {
     height: 100%;
     border-radius: 30px;
 }
+
+.volbar-controls .volbar {
+    width: 40%;
+    background-color: #5c5c5c;
+    border-radius: 30px;
+    height: 5px;
+}
+
+.volbar .volbar-white {
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    border-radius: 30px;
+
+}
+
+.volbar-controls>div {
+    width: 10%;
+}
+
+.playbar-controls-btn {
+    width: 200px;
+}
+
+.volbar-controls i,
+.two-icons i {
+    font-size: x-small;
+}
+
 
 
 
@@ -381,6 +442,12 @@ hr {
         width: calc(100%/4);
     }
 
+    .albumbar-controls .two-icons {
+        flex-direction: column;
+    }
+
+
+
 }
 
 @media screen and (max-width: 576px) {
@@ -405,7 +472,6 @@ hr {
 
     .sidebar-container {
         padding: 0px;
-
     }
 
     .row-sidebar {

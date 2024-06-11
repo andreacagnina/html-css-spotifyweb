@@ -263,8 +263,19 @@
     </main>
 
     <footer class="flex">
-
-        <div class="left-container"></div>
+        <div class="right-container flex">
+            <div class="albumbar-controls flex items-center j-evenly">
+                <div class="album-photo"><img src="./img/sinister.jpeg" alt=""></div>
+                <div class="album-current">
+                    <h4>Sinister</h4>
+                    <p class="hover under">Brano Nome</p>
+                </div>
+                <div class="flex j-btw two-icons">
+                    <div class="hover"><i class="fa-regular fa-heart"></i></div>
+                    <div class="hover"><i class="fa-regular fa-folder"></i></div>
+                </div>
+            </div>
+        </div>
         <div class="center-container flex column j-center items-center">
             <div class="playbar-controls-btn flex j-btw">
                 <div><i class=" fa-solid fa-shuffle hover"></i></div>
@@ -273,7 +284,7 @@
                 <div><i class="fa-solid fa-forward-step hover"></i></div>
                 <div><i class="fa-solid fa-rotate-right hover"></i></div>
             </div>
-            <div class="playbar-controls flex items-center">
+            <div class="playbar-controls flex items-center j-around">
                 <div class="current text-center">0:25</div>
                 <div class="playbar">
                     <div class="playbar-white"></div>
@@ -281,8 +292,16 @@
                 <div class="end text-center">4:35</div>
             </div>
         </div>
-        <div class="right-container"></div>
-
+        <div class="right-container flex">
+            <div class="volbar-controls flex items-center j-around align-right">
+                <div><i class="fa-solid fa-bars hover"></i></div>
+                <div><i class="fa-solid fa-tv hover"></i></div>
+                <div><i class="fa-solid fa-volume-high hover"></i></div>
+                <div class="volbar">
+                    <div class="volbar-white"></div>
+                </div>
+            </div>
+        </div>
         <!-- <div class="left-container">
             <div class="content flex items-center">
                 <div>
