@@ -304,6 +304,8 @@ hr {
 }
 
 
+
+
 /* -------------------------FOOTER------------------ */
 .left-container,
 .right-container {
@@ -337,7 +339,7 @@ hr {
 }
 
 .albumbar-controls .album-current {
-    font-size: xx-small;
+    font-size: medium;
 }
 
 .albumbar-controls .two-icons,
@@ -399,6 +401,15 @@ hr {
 .music-list ul li:hover {
     color: #fff;
     cursor: pointer;
+
+}
+
+.music-list ul li:hover .selected {
+    margin: 5px auto;
+    width: 50%;
+    background-color: #b1dc6b;
+    height: 3px;
+    border-radius: 30px;
 }
 
 .sidebar-container ul li:hover {
@@ -464,6 +475,10 @@ hr {
     .albumbar-controls .album-photo {
         width: 30px;
         height: 30px;
+    }
+
+    .albumbar-controls .album-current {
+        font-size: x-small;
     }
 
 }
