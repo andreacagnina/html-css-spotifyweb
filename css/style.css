@@ -27,7 +27,7 @@ main {
     color: #7f7e88;
     font-weight: 700;
     overflow-y: hidden;
-    min-width: 250px;
+    min-width: 200px;
 }
 
 
@@ -38,7 +38,6 @@ main {
 
 
 .full-container {
-    width: 100vw;
     background-color: #141922;
     overflow-y: auto;
 }
@@ -59,7 +58,7 @@ ul {
 }
 
 ul li,
-.playlist h4 {
+.nav-playlist h4 {
     padding: 10px 0;
 }
 
@@ -77,7 +76,7 @@ ul li,
     padding: 0 15px;
 }
 
-.nav-icons ul li {
+.nav-menu ul li {
     display: flex;
     align-items: center;
 }
@@ -121,11 +120,9 @@ li img {
 }
 
 .row-sidebar {
-    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
 }
 
 .align-center {
@@ -169,8 +166,8 @@ li img {
     object-fit: fill;
 }
 
-.logo img {
-    width: 150px;
+.nav-logo img {
+    width: 200px;
 }
 
 .resize-15 {
@@ -220,7 +217,7 @@ li img {
 }
 
 .p-10 {
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .content {
@@ -279,7 +276,7 @@ hr {
 
 
 .height-250 {
-    height: 250px;
+    height: 600px;
     overflow-y: auto;
 }
 
@@ -287,28 +284,18 @@ hr {
     position: relative;
 }
 
-.fixed {
+/* .fixed {
     position: fixed;
     bottom: 100px;
-}
+} */
 
 .bg-black {
     background-color: black;
 }
 
-.w-210 {
-    width: 210px;
-}
-
-/* .content-sidebar-small-bottom {
-    height: 107px;
-}
-
-.content-sidebar-small-top {
-    height: calc(100-107px);
+/* .w-200 {
+    width: 200px;
 } */
-
-
 
 
 /* -------------------------FOOTER------------------ */
@@ -328,7 +315,6 @@ hr {
 .albumbar-controls {
     width: 100%;
 }
-
 
 
 .albumbar-controls .album-photo {
@@ -488,11 +474,6 @@ hr {
         font-size: x-small;
     }
 
-    /* .col {
-        width: calc(100%/2);
-        min-width: 170px;
-        min-height: 170px;
-    } */
 
     .hidden {
         display: flex;
@@ -547,10 +528,6 @@ hr {
         min-height: 170px;
     }
 
-    /* .volbar-controls i,
-    .two-icons i {
-        font-size: X-small;
-    } */
 
     .playbar-controls .current,
     .playbar-controls .end {
@@ -562,8 +539,7 @@ hr {
     }
 
     .play {
-        font-size: 5rem;
-
+        font-size: 6rem;
     }
 
     .album-current {
@@ -588,4 +564,33 @@ hr {
     }
 
 
+}
+
+/* --------------REWIND SIDEBAR---------------------- */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.top-sidebar {
+    height: calc(100% - 80px);
+    overflow-y: hidden;
+
+
+}
+
+.nav-playlist {
+    overflow-y: hidden;
+}
+
+.playlist-list {
+    height: 90%;
+    overflow-y: auto;
+}
+
+.bottom-sidebar {
+    height: 80px;
+    background-color: black;
 }
