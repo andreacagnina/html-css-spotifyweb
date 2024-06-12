@@ -462,6 +462,7 @@ hr {
 }
 
 
+
 @media screen and (max-width: 836px) {
     .col {
         width: calc(100%/4);
@@ -516,11 +517,11 @@ hr {
     }
 
     footer {
-        height: 50px;
+        height: 80px;
     }
 
     main {
-        height: calc(100vh - 50px);
+        height: calc(100vh - 80px);
     }
 
     .header-container {
@@ -566,22 +567,12 @@ hr {
         display: none;
     }
 
-    .relative {
-        position: relative;
-    }
+
 
     .volbar.bar.none {
         display: none;
     }
 
-    .volbar.bar.rotate {
-        display: flex;
-        width: 100px;
-        transform: rotate(90deg);
-        position: absolute;
-        top: -56px;
-        right: -37px;
-    }
 
 
 }
