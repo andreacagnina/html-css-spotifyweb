@@ -26,6 +26,7 @@ main {
 .full-container {
     background-color: #141922;
     overflow-y: auto;
+    width: 100vw;
 }
 
 .header-container {
@@ -33,8 +34,8 @@ main {
     padding: 30px 10px;
     background-color: #080b1285;
     text-align: right;
+    height: 100px;
 }
-
 
 
 /* -------------------UTILITY UL & LI----------------  */
@@ -76,6 +77,8 @@ li img {
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
 
 /* ------------------------FLEX------------------------- */
@@ -210,6 +213,24 @@ li img {
     padding-left: 10px;
 }
 
+.p-l-3 {
+    padding-left: 3px;
+}
+
+.p-l-7 {
+    padding-left: 7px;
+}
+
+.p-l-14 {
+    padding-left: 14px;
+}
+
+
+
+.sidebar.hidden .nav-menu ul li {
+    padding: 5px 10px 5px 6px;
+}
+
 /* -----------------UTILITY VARIE--------------------- */
 
 h2,
@@ -262,6 +283,18 @@ hr {
     background-color: black;
 }
 
+.music-list .selected {
+    margin: 5px auto;
+    width: 50%;
+    background-color: #141922;
+    height: 3px;
+    border-radius: 30px;
+}
+
+.border-left {
+    border-left: 4px solid black;
+}
+
 
 /* --------------REWIND SIDEBAR---------------------- */
 
@@ -272,9 +305,10 @@ hr {
 }
 
 .top-sidebar {
-    height: calc(100% - 80px);
+    height: calc(100% - 110px);
     overflow-y: hidden;
 }
+
 
 .nav-playlist {
     overflow-y: hidden;
@@ -286,7 +320,7 @@ hr {
 }
 
 .bottom-sidebar {
-    height: 80px;
+    height: 110px;
     background-color: black;
 }
 
@@ -311,7 +345,8 @@ hr {
 
 
 .albumbar-controls .album-photo {
-    width: 20%;
+    width: 58px;
+    height: 58px;
 }
 
 .albumbar-controls .album-photo img {
@@ -391,11 +426,7 @@ hr {
 }
 
 .music-list ul li:hover .selected {
-    margin: 5px auto;
-    width: 50%;
     background-color: #b1dc6b;
-    height: 3px;
-    border-radius: 30px;
 }
 
 .sidebar ul li:hover {
@@ -479,9 +510,6 @@ hr {
         height: 110px;
     }
 
-    .top-sidebar {
-        height: calc(100% - 110px);
-    }
 
     .fa-2xl {
         font-size: 1.5em;
