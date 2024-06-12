@@ -27,18 +27,18 @@ main {
     color: #7f7e88;
     font-weight: 700;
     overflow-y: hidden;
-    min-width: 230px;
+    min-width: 250px;
 }
 
 
 .sidebar-container {
     background-color: black;
-    width: 43px;
+    width: 50px;
 }
 
 
 .full-container {
-    width: calc(100vw-230px);
+    width: 100vw;
     background-color: #141922;
     overflow-y: auto;
 }
@@ -142,6 +142,7 @@ li img {
 
 .col-100 {
     width: 100%;
+
 }
 
 .col-50 {
@@ -150,12 +151,8 @@ li img {
 
 .col {
     width: calc(100%/6);
-    min-width: 173px;
-    min-height: 173px;
-}
-
-.col-min-width-200 {
-    min-width: 200px;
+    min-width: 170px;
+    min-height: 170px;
 }
 
 
@@ -303,6 +300,14 @@ hr {
     width: 210px;
 }
 
+/* .content-sidebar-small-bottom {
+    height: 107px;
+}
+
+.content-sidebar-small-top {
+    height: calc(100-107px);
+} */
+
 
 
 
@@ -387,7 +392,9 @@ hr {
     width: 200px;
 }
 
-
+.volbar.bar.rotate {
+    display: none;
+}
 
 
 
@@ -451,11 +458,11 @@ hr {
 }
 
 
-
-
 @media screen and (max-width: 836px) {
     .col {
         width: calc(100%/4);
+        min-width: 170px;
+        min-height: 170px;
     }
 
     .volbar-controls i,
@@ -470,7 +477,7 @@ hr {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 779px) {
 
     .albumbar-controls .album-photo {
         width: 30px;
@@ -481,22 +488,11 @@ hr {
         font-size: x-small;
     }
 
-}
-
-@media screen and (max-width: 576px) {
-    .col {
+    /* .col {
         width: calc(100%/2);
-    }
-
-    .volbar-controls i,
-    .two-icons i {
-        font-size: X-small;
-    }
-
-    .playbar-controls .current,
-    .playbar-controls .end {
-        font-size: x-small;
-    }
+        min-width: 170px;
+        min-height: 170px;
+    } */
 
     .hidden {
         display: flex;
@@ -514,12 +510,51 @@ hr {
         align-items: center;
     }
 
-    .m-0 {
-        margin: 0;
+    .fa-2xl {
+        font-size: 1.5em;
     }
 
-    .two-icons {
-        flex-direction: column;
+    footer {
+        height: 50px;
+    }
+
+    main {
+        height: calc(100vh - 50px);
+    }
+
+    .header-container {
+        height: 50px;
+        padding: 5px 10px;
+    }
+
+    .header-container button:hover {
+        font-size: medium;
+    }
+
+    .card h3,
+    .card p {
+        font-size: small;
+    }
+
+
+}
+
+@media screen and (max-width: 569px) {
+
+    .col {
+        width: calc(100%/2);
+        min-width: 170px;
+        min-height: 170px;
+    }
+
+    /* .volbar-controls i,
+    .two-icons i {
+        font-size: X-small;
+    } */
+
+    .playbar-controls .current,
+    .playbar-controls .end {
+        font-size: x-small;
     }
 
     .two-icons div {
@@ -530,5 +565,27 @@ hr {
         font-size: 5rem;
 
     }
+
+    .album-current {
+        display: none;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .volbar.bar.none {
+        display: none;
+    }
+
+    .volbar.bar.rotate {
+        display: flex;
+        width: 100px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: -56px;
+        right: -37px;
+    }
+
 
 }

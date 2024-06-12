@@ -77,7 +77,7 @@
         </div>
         <div class="sidebar-container small p-10 hidden">
             <div class="row-sidebar">
-                <div class="content text-center">
+                <div class="content-sidebar-small-top text-center">
                     <ul>
                         <li><img src="./img/logo-small.svg" alt="Logo"></li>
                         <li class="border-left"><img src="./img/home.svg" alt="Home"></li>
@@ -87,7 +87,7 @@
                         <li class="border-left"><img src="./img/libreria.svg" alt="Library"></li>
                     </ul>
                 </div>
-                <div class="content text-center fixed bg-black">
+                <div class="content-sidebar-small-bottom text-center bg-black">
                     <ul>
                         <li><img class="resize-15" src="./img/download.svg" alt="download"></li>
                         <li><img class="avatar round" src="./img/profile.svg" alt="profile"></li>
@@ -318,12 +318,16 @@
                     <div><i class="fa-solid fa-bars hover"></i></div>
                     <div><i class="fa-solid fa-tv hover"></i></div>
                 </div>
-                <div><i class="fa-solid fa-volume-high hover"></i></div>
-                <div class="volbar bar">
+                <div class="relative"><i class="fa-solid fa-volume-high hover"></i>
+                    <div class="volbar bar rotate">
+                        <div class="bar-white volbar-white"></div>
+                    </div>
+                </div>
+                <div class="volbar bar none">
                     <div class="bar-white volbar-white"></div>
                 </div>
+
             </div>
-        </div>
     </footer>
 
 </body>
