@@ -22,20 +22,6 @@ main {
 
 /* -------------------------CONTAINER---------------------------- */
 
-.sidebar-container.lg {
-    overflow-x: hidden;
-    color: #7f7e88;
-    font-weight: 700;
-    overflow-y: hidden;
-    min-width: 200px;
-}
-
-
-.sidebar-container {
-    background-color: black;
-    width: 50px;
-}
-
 
 .full-container {
     background-color: #141922;
@@ -119,15 +105,6 @@ li img {
     justify-content: space-evenly;
 }
 
-.row-sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.align-center {
-    text-align: center;
-}
 
 .align-right {
     text-align: right;
@@ -229,10 +206,6 @@ li img {
 }
 
 
-.row-sidebar .content {
-    margin-left: 0;
-}
-
 .p-l-10 {
     padding-left: 10px;
 }
@@ -284,18 +257,38 @@ hr {
     position: relative;
 }
 
-/* .fixed {
-    position: fixed;
-    bottom: 100px;
-} */
 
 .bg-black {
     background-color: black;
 }
 
-/* .w-200 {
-    width: 200px;
-} */
+
+/* --------------REWIND SIDEBAR---------------------- */
+
+.sidebar {
+    height: 100%;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.top-sidebar {
+    height: calc(100% - 80px);
+    overflow-y: hidden;
+}
+
+.nav-playlist {
+    overflow-y: hidden;
+}
+
+.playlist-list {
+    height: 90%;
+    overflow-y: auto;
+}
+
+.bottom-sidebar {
+    height: 80px;
+    background-color: black;
+}
 
 
 /* -------------------------FOOTER------------------ */
@@ -405,12 +398,7 @@ hr {
     border-radius: 30px;
 }
 
-.sidebar-container ul li:hover {
-    color: #fff;
-    cursor: pointer;
-}
-
-.new-list:hover {
+.sidebar ul li:hover {
     color: #fff;
     cursor: pointer;
 }
@@ -440,7 +428,6 @@ hr {
 
 .border-left:hover {
     border-left: 4px solid #b1dc6b;
-
 }
 
 
@@ -479,16 +466,21 @@ hr {
         display: flex;
     }
 
-    .sidebar-container.lg {
+    .sidebar.lg {
         display: none;
     }
 
-    .sidebar-container {
-        padding: 0px;
+    .nav-logo img {
+        width: 40px;
+        height: 40px
     }
 
-    .row-sidebar {
-        align-items: center;
+    .bottom-sidebar {
+        height: 110px;
+    }
+
+    .top-sidebar {
+        height: calc(100% - 110px);
     }
 
     .fa-2xl {
@@ -564,33 +556,4 @@ hr {
     }
 
 
-}
-
-/* --------------REWIND SIDEBAR---------------------- */
-.sidebar {
-    width: 250px;
-    height: 100%;
-    background-color: black;
-    padding: 10px 0;
-}
-
-.top-sidebar {
-    height: calc(100% - 80px);
-    overflow-y: hidden;
-
-
-}
-
-.nav-playlist {
-    overflow-y: hidden;
-}
-
-.playlist-list {
-    height: 90%;
-    overflow-y: auto;
-}
-
-.bottom-sidebar {
-    height: 80px;
-    background-color: black;
 }
