@@ -448,7 +448,7 @@ hr {
 }
 
 .hover.fa-2xl:hover {
-    font-size: 40px;
+    transform: scale(1.2);
 }
 
 .playbar .playbar-white:hover,
